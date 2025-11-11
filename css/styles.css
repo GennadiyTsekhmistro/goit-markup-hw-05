@@ -315,6 +315,47 @@ button {
   padding: 32px 0;
 }
 
+.foto-info ul {
+  display: flex;
+  gap: 16px; 
+}
+
+.foto-info ul li {
+  width: 40px;   
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #4D5AE5;
+} 
+
+/* .foto-info ul li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: #4D5AE5;
+  border-radius: 50%;
+  text-decoration: none;
+  transition: background-color 0.3s ease; */
+
+.foto-info ul li svg {
+  width: 100%;
+  height: 100%;
+  fill: black;
+  transition: fill 0.3s ease;
+}
+
+.foto-info ul li:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.foto-info ul li:hover svg {
+  fill: #4d5ae5; 
+}
+
 .foto-title {
   font-weight: 500;
   font-size: 20px;
@@ -395,7 +436,7 @@ button {
 /* #region footer */
 .footer-logo-cont {
   background-color: #2e2f42;
-  padding: 100px 0; /*додав у футері*/
+  padding: 100px 0; 
 }
 
 .footer-logo {
@@ -435,4 +476,56 @@ button {
   align-items: flex-start;
   gap: 16px;
 }
+
+
+.social-icons ul {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+}
+
+.social-icons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #434455;
+  transition: background-color 0.3s ease;
+}
+
+.social-icons a:hover {
+  background-color: #4d5ae5;
+}
+
+.social-icons li {
+  display: flex;              
+  align-items: center;       
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #4D5AE5;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.social-icons li:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transform: scale(1.1);
+}
+
+.social-icons svg {
+  /* width: 20px;
+  height: 20px; */
+  fill: #fff;
+}
+
+footer.footer-logo-cont > .container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 120px; /* тепер має точно спрацювати */
+}
+
 /* #endregion footer */
