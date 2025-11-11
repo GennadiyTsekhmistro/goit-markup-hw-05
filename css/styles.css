@@ -75,6 +75,30 @@ img {
   gap: 40px;
 }
 
+.nav-list a {
+  position: relative;
+  text-decoration: none;
+  color: #2e2f42;
+  padding-bottom: 4px; /* місце для підкреслення */
+  transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-list a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #4d5ae5;
+  transition: width 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-list a:hover::after,
+.nav-list a.current::after {
+  width: 100%;
+}
+
 .nav-link-header {
   font-weight: 500;
   font-size: 16px;
@@ -398,6 +422,11 @@ button {
   width: calc((100% - 48px) / 3);
 }
 
+.portfolio-item:hover {
+  transform: translateY(-5px); /* трохи піднімаємо картку */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* тінь */
+}
+
 .portfolio-info {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
@@ -469,6 +498,13 @@ button {
   gap: 16px;
 }
 
+.footer-text {
+  font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: #fff;
+}
 
 .social-icons ul {
   display: flex;
