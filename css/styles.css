@@ -94,6 +94,11 @@ img {
   transition: width 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.nav-list a:hover::after,
+.nav-list a.active::after { 
+  width: 100%; 
+}
+
 .nav-link-header {
   font-weight: 500;
   font-size: 16px;
@@ -254,7 +259,19 @@ button {
 
 .feature-block-item {
   width: calc((100% - 72px) / 4);
-  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.feature-block-item h3,
+.feature-block-item p {
+  text-align: left;   
+  width: 100%;        
+}
+
+.feature-block-item svg {
+  margin-bottom: 8px;
 }
 /* #endregion section-strategy */
 /* #region section-fotos */
