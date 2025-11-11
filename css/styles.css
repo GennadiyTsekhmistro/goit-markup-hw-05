@@ -351,6 +351,7 @@ button {
 .foto-li {
   background-color: #fff;
   border-radius: 0 0 4px 4px;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .foto-li img {
@@ -376,7 +377,9 @@ button {
 
 .foto-info ul {
   display: flex;
-  gap: 16px; 
+  gap: 24px; 
+  justify-content: center;
+  align-items: center;
 }
 
 .foto-info ul li {
@@ -457,6 +460,7 @@ button {
   width: calc((100% - 48px) / 3);
   position: relative;
   overflow: hidden;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-item img {
@@ -466,8 +470,10 @@ button {
 }
 
 .portfolio-item:hover {
-  transform: translateY(-5px); /* трохи піднімаємо картку */
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* тінь */
+  transform: translateY(-5px); 
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 
+    0px 1px 1px rgba(46, 47, 66, 0.16), 
+    0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .portfolio-info {
@@ -492,6 +498,10 @@ button {
   transform: translateY(0);
 }
 
+.portfolio-item:hover .portfolio-info p {
+  transform: translateY(0%);
+}
+
 .portfolio-name {
   font-size: 20px;
   font-weight: 500;
@@ -506,6 +516,11 @@ button {
   color: #434455;
   line-height: 1.5;
   letter-spacing: 0.02em;
+}
+
+.image-wrapper {
+  position: relative;
+  overflow: hidden;
 }
 
 .portfolio-description {
