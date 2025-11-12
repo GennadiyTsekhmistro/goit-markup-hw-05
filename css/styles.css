@@ -564,8 +564,13 @@ button {
 .footer-text {
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #f4f4fd;
   max-width: 264px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #fff;
+  margin-bottom: 16px;
 }
 
 .icon-nav-footer {
@@ -639,7 +644,21 @@ footer.footer-logo-cont > .container {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
-  gap: 120px; /* тепер має точно спрацювати */
+  gap: 120px; 
 }
 
+.footer-social {
+  display: flex;
+  gap: 16px;
+}
+
+.social-link {
+  width: 100%;
+  height: 100%;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+}
 /* #endregion footer */
