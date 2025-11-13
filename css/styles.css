@@ -362,6 +362,15 @@ button {
   margin: 0 auto;
 }
 
+.section-fotos .social-link {
+  width: 100%;
+  height: 100%;
+}
+
+.section-fotos .social-networks {
+  fill: #f4f4fd;
+}
+
 .foto-li {
   background-color: #fff;
   border-radius: 0 0 4px 4px;
@@ -672,6 +681,15 @@ footer.footer-logo-cont > .container {
   justify-content: flex-start;
   gap: 120px; 
 }
+
+.footer-logo-cont .social-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.footer-logo-cont .container {
+  align-items: baseline;
+}     /*   додано  */
 
 .footer-social {
   display: flex;
