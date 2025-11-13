@@ -596,6 +596,8 @@ button {
 .footer-logo-cont .container {
   display: flex;
   align-items: baseline; 
+  justify-content: flex-start;
+  gap: 120px;
 }
 
 .footer-logo-block {
@@ -630,11 +632,6 @@ button {
 
 .icon-nav-footer {
   color: #f4f4fd;
-}
-
-.footer-logo-cont .container {
-  display: flex;
-  align-items: baseline;
 }
 
 .footer-logo-cont .container>div:last-child {
@@ -704,11 +701,6 @@ footer.footer-logo-cont > .container {
   width: 40px;
   height: 40px;
 }
-
-.footer-logo-cont .container {
-  display: flex;     /* додано */
-  align-items: baseline;
-}    
 
 .footer-social {
   display: flex;
