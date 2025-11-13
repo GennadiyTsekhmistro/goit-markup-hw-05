@@ -424,6 +424,14 @@ button {
   fill: #4d5ae5; 
 }
 
+.social-link:hover {
+  background-color: #404bbf;
+}
+
+.social-link:focus {
+  background-color: #404bbf;
+}
+
 .foto-title {
   font-weight: 500;
   font-size: 20px;
