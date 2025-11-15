@@ -623,21 +623,6 @@ button {
   color: #f4f4fd;
 }
 
-/* .footer-logo-cont .container>div:last-child {
-  display: flex;
-  flex-direction: column;
-  align-items: baseline;   
-  gap: 16px;
-} */
-
-/* .footer-text {
-  font-weight: 500;
-font-size: 16px;
-line-height: 1.5;
-letter-spacing: 0.02em;
-color: #fff;
-} */
-
 .social-icons ul {
   display: flex;
   gap: 16px;
@@ -679,11 +664,11 @@ color: #fff;
   fill: #fff;
 }
 
-footer.footer-logo-cont > .container {
+/* footer.footer-logo-cont > .container {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
-  gap: 120px; 
+  gap: 120px;  */
 }
 
 .footer-logo-cont .social-icon {
