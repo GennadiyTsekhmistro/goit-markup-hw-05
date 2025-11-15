@@ -623,6 +623,11 @@ button {
   color: #f4f4fd;
 }
 
+.social-icon {
+  width: 40px;
+  height: 40px;
+}
+
 .social-icons ul {
   display: flex;
   gap: 16px;
