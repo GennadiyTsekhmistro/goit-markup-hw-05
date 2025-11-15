@@ -457,8 +457,8 @@ button {
 
 
 .section-fotos .social-media-point {
-  width: 40px;   /* або будь-яка бажана ширина блоку */
-  height: 40px;  /* або будь-яка бажана висота блоку */
+  width: 100%;   
+  height: 100%;  
 }
 /* #endregion section-fotos */
 
