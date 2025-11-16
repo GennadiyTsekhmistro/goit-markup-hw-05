@@ -560,16 +560,12 @@ button {
   overflow: hidden;
 }
 
-:root {
-  --text-color: #f4f4fd;
-}
-
 .portfolio-description {
   position: absolute;   
   top: 0;
   width: 100%;
   height: 100%;
-  color: var(--text-color);
+  color: #f4f4fd;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
