@@ -548,12 +548,19 @@ button {
   margin-bottom: 8px;
 }
 
-.portfolio-role {
+.portfolio-info .portfolio-role {
+    font-size: 16px;
+    color: #434455;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}                               /* додано */
+
+/* .portfolio-role {
   font-size: 16px;
   color: #434455;
   line-height: 1.5;
   letter-spacing: 0.02em;
-}
+} */
 
 .portfolio-image {
   position: relative;
