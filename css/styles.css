@@ -749,14 +749,29 @@ footer .social-link:focus {
 
 .modal-close {
   position: absolute;
-  top: 16px;
-  right: 16px;
+  top: 24px;
+  right: 24px;
   width: 24px;
   height: 24px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   background-color: #e7e9fc;
   cursor: pointer;
+}
+
+.modal-title {
+  margin-top: 72px;
+  width: 100%;
+  font-weight: 500;
+font-size: 16px; 
+line-height: 1.5;
+letter-spacing: 0.02em;
+text-align: center;
+color: #2e2f42;
+}
+
+.subscribe-icon-close {
+  color: 2E2F42;
 }
 
 .application-form {
@@ -766,13 +781,41 @@ footer .social-link:focus {
   gap: 12px;              
 }
 
-.application-form input,
-.application-form textarea {
+.input-with-icon {
+  position: relative;
   width: 100%;
-  padding: 8px;
+}
+
+.input-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  fill: currentColor;
+  color: #2e2f42;
+}
+
+.input-with-icon input {
+  width: 100%;
+  padding: 10px 12px 10px 48px; /* місце під іконку зліва */
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
+  font-size: 16px;
+}
+
+.application-form input,
+.application-form textarea {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.input-with-icon input {
+  padding-left: 48px; /* відступ, щоб текст не накладався на іконку */
 }
 
 .application-form button[type="submit"] {
