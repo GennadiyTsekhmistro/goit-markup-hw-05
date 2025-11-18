@@ -675,6 +675,44 @@ footer .social-link:focus {
 .social-networks {
   fill: #f4f4fd;
 }
+
+.footer-subscription {
+  display: flex;
+  flex-direction: column;
+  gap: 8px; /* відстань між заголовком Subscribe і формою */
+}
+
+.subscribe-title {
+  color: #ffffff;
+}
+
+.subscription-input-group {
+  display: flex;
+  gap: 8px; /* Відстань між input і кнопкою */
+}
+
+.subscription-input-group input {
+  flex-grow: 1; /* input займає доступну ширину */
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.subscription-input-group button {
+  padding: 8px 16px;
+  background-color: #4a76f0;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+
+}
+
+.subscribe-icon {
+  background-color: #31d0aa;
+  fill: black;
+}
 /* #endregion footer */
 
 /* #region Modal window */
