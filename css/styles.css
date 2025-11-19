@@ -196,8 +196,8 @@ img {
 button {
   justify-content: center;
   cursor: pointer;
-  padding-block: 16px;
-  padding-inline: 32px;
+  /* padding-block: 16px;
+  padding-inline: 32px; */
   background: #4d5ae5;
 }
 
@@ -710,7 +710,6 @@ footer .social-link:focus {
 }
 
 .subscribe-icon {
-  background-color: #31d0aa;
   fill: black;
 }
 /* #endregion footer */
@@ -739,7 +738,7 @@ footer .social-link:focus {
 }
 
 .backdrop:not(.is-open) .modal-drop {
-  transform: translate (-50%, -50%) scale(1.5);
+  transform: translate(-50%, -50%) scale(1.5);
 }
 
 .modal-drop {
@@ -767,21 +766,25 @@ footer .social-link:focus {
   border-radius: 50%;
   background-color: #e7e9fc;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
 }
 
 .modal-title {
   margin-top: 72px;
   width: 100%;
   font-weight: 500;
-font-size: 16px; 
-line-height: 1.5;
-letter-spacing: 0.02em;
-text-align: center;
-color: #2e2f42;
+  font-size: 16px; 
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #2e2f42;
 }
 
 .subscribe-icon-close {
-  color: 2E2F42;
+  fill: #2E2F42;
 }
 
 .application-form {
@@ -819,7 +822,7 @@ color: #2e2f42;
 .application-form textarea {
   width: 100%;
   padding: 8px 12px;
-  border: 1px solid #ccc;
+  border: 1px solid #FF0000;
   border-radius: 4px;
   box-sizing: border-box;
 }
@@ -837,4 +840,30 @@ color: #2e2f42;
   cursor: pointer;
   margin-top: 8px; 
 }
+
+.checkbox-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 12px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16667;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+}
+
+.checkbox-wrapper input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.checkbox-span {
+    line-height: 1.33333;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: #4d5ae5
+}
+
 /* #endregion Modal window */
