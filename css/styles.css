@@ -806,12 +806,12 @@ footer .social-link:focus {
   transform: translateY(-50%);
   pointer-events: none;
   fill: currentColor;
-  color: #2e2f42;
+  color: #2E2F42;
 }
 
 .input-with-icon input {
   width: 100%;
-  padding: 10px 12px 10px 48px; /* місце під іконку зліва */
+  padding: 10px 12px 10px 48px; 
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
@@ -822,7 +822,7 @@ footer .social-link:focus {
 .application-form textarea {
   width: 100%;
   padding: 8px 12px;
-  border: 1px solid #FF0000;
+  border: 1px solid #8E8F99;
   border-radius: 4px;
   box-sizing: border-box;
 }
