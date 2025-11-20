@@ -918,4 +918,12 @@ label[for="applicant-phone"]:focus {
 .checkbox-wrapper:hover {
   border-color: #4D5AE5;
 }
+
+.checkbox-wrapper .checkbox-icon {
+  fill: transparent;
+}
+
+.checkbox-wrapper input[type="checkbox"]:checked+label .checkbox-icon {
+  fill: #4D5AE5;
+}
 /* #endregion Modal window */
