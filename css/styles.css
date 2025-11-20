@@ -809,7 +809,6 @@ footer .social-link:focus {
   color: #2E2F42;
 }
 
-
 .input-with-icon input {
   width: 100%;
   padding: 10px 12px 10px 48px; 
@@ -818,6 +817,8 @@ footer .social-link:focus {
   box-sizing: border-box;
   font-size: 16px;
 }
+
+
 
 .application-form input,
 .application-form textarea {
@@ -829,7 +830,7 @@ footer .social-link:focus {
 }
 
 .input-with-icon input {
-  padding-left: 48px; /* відступ, щоб текст не накладався на іконку */
+  padding-left: 48px; 
 }
 
 .application-form button[type="submit"] {
@@ -867,4 +868,40 @@ footer .social-link:focus {
     color: #4d5ae5
 }
 
+
+.input-with-icon input:hover,
+.input-with-icon input:focus {
+  border-color: #4D5AE5;
+}
+
+.input-with-icon input:hover+svg,
+.input-with-icon input:focus+svg {
+  fill: #4D5AE5;
+}
+
+.input-with-icon:hover .input-icon,
+.input-with-icon:focus-within .input-icon {
+  fill: #4D5AE5;
+}
+
+
+label[for="applicant-name"]:hover,
+label[for="applicant-name"]:focus,
+label[for="applicant-email"]:hover,
+label[for="applicant-email"]:focus,
+label[for="applicant-phone"]:hover,
+label[for="applicant-phone"]:focus {
+  color: #4D5AE5;
+}
+
+.input-with-icon:first-of-type::after {
+  content: "";
+  position: absolute;
+  left: 36px;
+  top: 8px;
+  bottom: 8px;
+  width: 1px;
+  background-color: #8E8F99;
+  pointer-events: none;
+}
 /* #endregion Modal window */
