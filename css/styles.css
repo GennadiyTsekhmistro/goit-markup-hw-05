@@ -690,9 +690,10 @@ footer .social-link:focus {
     gap: 8px;
     align-items: flex-end;
     width: 100%;
+    gap: 24px;
   /* display: flex;
   flex-direction: column;
-  gap: 24px;
+  
   width: 100%; */
 }
 
@@ -716,6 +717,22 @@ footer .social-link:focus {
   gap: 4px;
 }
 
+.email-input {
+  width: 264px;
+  height: 40px;
+  border: 1px solid #fff;
+  background-color: transparent;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  padding-left: 16px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.email-input::placeholder {
+  color: #fff;
+}
+
 .label-footer input {
   width: 100%;
   padding: 8px 12px;
@@ -724,6 +741,24 @@ footer .social-link:focus {
   font-size: 14px;
   box-sizing: border-box;
   display: block;
+}
+
+.subscribe-btn {
+  min-width: 165px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Roboto" serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  cursor: pointer;
+  background-color: #4D5AE5;
+  border: none;
+  border-radius: 4px;
 }
 
 .subscription-input-group {
@@ -749,6 +784,7 @@ footer .social-link:focus {
 }
 
 .subscribe-icon {
+  margin-left: 16px;
   fill: black;
 }
 /* #endregion footer */
