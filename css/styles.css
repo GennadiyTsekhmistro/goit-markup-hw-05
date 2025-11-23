@@ -875,7 +875,6 @@ footer .social-link:focus {
 
 .subscribe-icon-close {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  /* fill: #2E2F42; */
   }
 
 .application-form {
@@ -932,15 +931,6 @@ footer .social-link:focus {
   fill: #4D5AE5;
 }
 
-.input-with-icon input {
-  width: 100%;
-  padding: 10px 12px 10px 48px; 
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  font-size: 16px;
-}
-
 .textarea-comment {
   width: 100%;
   height: 120px;
@@ -961,8 +951,6 @@ footer .social-link:focus {
   border-color: #4D5AE5;
 }
 
-
-
 .label-checkbox {
   font-size: 12px;
   line-height: 1.17;
@@ -970,18 +958,8 @@ footer .social-link:focus {
   color: #8e8f99;
 }
 
-
 .textarea-container {
   margin-bottom: 16px;
-}
-
-.application-form input,
-.application-form textarea {
-  width: 100%;
-  padding: 8px 12px;
-  border: 1px solid #8E8F99;
-  border-radius: 4px;
-  box-sizing: border-box;
 }
 
 .application-form button[type="submit"] {
@@ -996,21 +974,6 @@ footer .social-link:focus {
 
 .checkbox-wrapper {
   margin-bottom: 24px;
-  /* display: flex;
-  align-items: center;
-  gap: 8px;
-  margin-top: 12px;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.16667;
-  letter-spacing: 0.04em;
-  color: #8e8f99; */
-}
-
-.checkbox-wrapper input[type="checkbox"] {
-  width: 16px;
-  height: 16px;
-  cursor: pointer;
 }
 
 .checkbox-span {
@@ -1056,7 +1019,7 @@ footer .social-link:focus {
   cursor: pointer;
   background-color: #4D5AE5;
   border: none;
-  background-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .input-with-icon input:hover,
@@ -1074,16 +1037,6 @@ footer .social-link:focus {
   fill: #4D5AE5;
 }
 
-
-label[for="applicant-name"]:hover,
-label[for="applicant-name"]:focus,
-label[for="applicant-email"]:hover,
-label[for="applicant-email"]:focus,
-label[for="applicant-phone"]:hover,
-label[for="applicant-phone"]:focus {
-  color: #4D5AE5;
-}
-
 .input-with-icon:first-of-type::after {
   content: "";
   position: absolute;
@@ -1095,7 +1048,6 @@ label[for="applicant-phone"]:focus {
   pointer-events: none;
 }
 
-
 .checkbox-wrapper {
   display: inline-flex;
   align-items: center;
@@ -1103,14 +1055,6 @@ label[for="applicant-phone"]:focus {
   border: 1px solid transparent;
   border-radius: 4px;
   transition: border-color 0.2s ease;
-}
-
-.checkbox-wrapper label {
-font-weight: 400;
-font-size: 12px;
-line-height: 1.16667;
-letter-spacing: 0.04em;
-color: #8e8f99;
 }
 
 .checkbox-wrapper label,
@@ -1122,11 +1066,4 @@ white-space: nowrap;
   border-color: #4D5AE5;
 }
 
-.checkbox-wrapper .checkbox-icon {
-  fill: transparent;
-}
-
-.checkbox-wrapper input[type="checkbox"]:checked+label .checkbox-icon {
-  fill: #4D5AE5;
-}
 /* #endregion Modal window */
