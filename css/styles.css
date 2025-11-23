@@ -1000,11 +1000,17 @@ footer .social-link:focus {
   border: 0;
 }
 
-.checkbox-input:checked+.label-checkbox .checkbox-span {
+.label-checkbox:has(+ .checkbox-input:checked) .checkbox-span {
   background-color: var(--color-blue, #404bbf);
   border: none;
   fill: var(--color-light, #F4F4FD);
 }
+
+/* .checkbox-input:checked+.label-checkbox .checkbox-span {
+  background-color: var(--color-blue, #404bbf);
+  border: none;
+  fill: var(--color-light, #F4F4FD);
+} */
 
 .btn-submit {
   display: block;
