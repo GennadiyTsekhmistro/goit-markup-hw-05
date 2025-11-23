@@ -823,7 +823,7 @@ footer .social-link:focus {
   transform: translate(-50%, -50%);
   display: flex;
   flex-direction: column; 
-  padding: 24px;
+  padding: 72px 24px 24px 24px;
 }
 
 .modal-close {
@@ -853,6 +853,14 @@ footer .social-link:focus {
   border: none;
 }
 
+.modal-close:hover .subscribe-icon-close {
+  fill: #ffffff;
+}
+
+.modal-close:focus .subscribe-icon-close {
+  fill: #ffffff;
+}
+
 .modal-title {
   margin-top: 72px;
   width: 100%;
@@ -862,6 +870,7 @@ footer .social-link:focus {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
+  margin-bottom: 16px;
 }
 
 .subscribe-icon-close {
@@ -877,8 +886,19 @@ footer .social-link:focus {
 }
 
 .input-with-icon {
+  margin-bottom: 8px;
+
   position: relative;
   width: 100%;
+}
+
+.label-name {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+  display: block;
+  margin-bottom: 4px;
 }
 
 .input-icon {
@@ -900,7 +920,9 @@ footer .social-link:focus {
   font-size: 16px;
 }
 
-
+/* .input-with-icon input {
+  padding-left: 48px;
+} */
 
 .application-form input,
 .application-form textarea {
@@ -909,10 +931,6 @@ footer .social-link:focus {
   border: 1px solid #8E8F99;
   border-radius: 4px;
   box-sizing: border-box;
-}
-
-.input-with-icon input {
-  padding-left: 48px; 
 }
 
 .application-form button[type="submit"] {
