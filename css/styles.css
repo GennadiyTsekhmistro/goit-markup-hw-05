@@ -962,10 +962,6 @@ footer .social-link:focus {
   margin-bottom: 16px;
 }
 
-.checkbox-wrapper {
-  margin-bottom: 24px;
-}
-
 .checkbox-span {
     width: 16px;
     height: 16px;
@@ -1043,6 +1039,7 @@ footer .social-link:focus {
   border: 1px solid transparent;
   border-radius: 4px;
   transition: border-color 0.2s ease;
+  margin-bottom: 24px;
 }
 
 .checkbox-wrapper label,
@@ -1054,9 +1051,11 @@ white-space: nowrap;
   border-color: #4D5AE5;
 }
 
-.label-checkbox:has(.checkbox-input:checked) .checkbox-span {
+.checkbox-input:checked + .label-checkbox>
+.checkbox-span {
   background-color: #404bbf;
   border: none;
+  fill: #F4F4FD;
 }
 
 /* #endregion Modal window */
