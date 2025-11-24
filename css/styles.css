@@ -962,16 +962,6 @@ footer .social-link:focus {
   margin-bottom: 16px;
 }
 
-/* .application-form button[type="submit"] {
-  padding: 10px 16px;
-  border: none;
-  background-color: #4a76f0;
-  color: white;
-  border-radius: 4px;
-  cursor: pointer;
-  margin-top: 8px; 
-} */
-
 .checkbox-wrapper {
   margin-bottom: 24px;
 }
@@ -1062,6 +1052,11 @@ white-space: nowrap;
 
 .checkbox-wrapper:hover {
   border-color: #4D5AE5;
+}
+
+.label-checkbox:has(.checkbox-input:checked) .checkbox-span {
+  background-color: #404bbf;
+  border: none;
 }
 
 /* #endregion Modal window */
